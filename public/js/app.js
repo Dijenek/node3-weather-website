@@ -1,4 +1,3 @@
-//const { response } = require("express")
 
 
 const weatherForm = document.querySelector('form')
