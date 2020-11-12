@@ -14,7 +14,7 @@ const getForecast = (latitude, altitude, callback) => {
             callback('Incorrect coordinates', undefined)
         }
         else {
-            callback(undefined, "It is currently " + body.current.temperature + " degrees and it feels like " + body.current.feelslike + ". Humidity is " + body.current.humidity + "%.")
+            callback(undefined, body.current.weather_description[0] + ". It is currently " + body.current.temperature + " degrees and it feels like " + body.current.feelslike + ". Humidity is " + body.current.humidity + "%.")
         }
     })
    
